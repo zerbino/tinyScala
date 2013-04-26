@@ -1,0 +1,11 @@
+Cons(Integer(1), Cons(Integer(2), null)).length()
+
+class Integer(value: Integer) {
+  getValue(): Integernt = value
+}
+
+class Cons(head: Integer, tail: Cons) {
+  car(): Integer = head
+  cdr(): Cons = tail
+  length(): Integer = tail == null ? 1 : 1 + tail.length()
+}
